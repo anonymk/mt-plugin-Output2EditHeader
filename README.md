@@ -88,8 +88,8 @@ Movable Type 5.2でリッチテキストエディタとして採用されてい�
         plugin_mt_wysiwyg_buttons2: 'undo,redo,|,forecolor,backcolor,removeformat,|,justifyleft,justifycenter,justifyright,indent,outdent,|,formatselect,|,mt_fullscreen',
         theme_advanced_blockformats: 'h1,h2,h3,h4,h5,h6,p,pre',
         init_instance_callback : function(ed) {
-            formatselect = ed.controlManager.get('formatselect');
-            items = formatselect.items;
+            var formatselect = ed.controlManager.get('formatselect');
+            var items = formatselect.items;
             for(var i in items) {
                 switch(items[i].value) {
                     case 'h1':
