@@ -74,8 +74,8 @@ Movable Type 5.2でリッチテキストエディタとして採用されてい�
         theme_advanced_blockformats: 'h1,h2,h3,h4,h5,h6,p,pre',
         formats: {
             alignleft: { selector: 'div,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'left' },
-            aligncenter: { selector: 'div,p,th,td,table,img', classes: 'center' },
-            alignright: { selector: 'div,p,th,td,table,img', classes: 'right' },
+            aligncenter: { selector: 'div,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'center' },
+            alignright: { selector: 'div,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'right' },
             underline: { inline: 'span', 'classes': 'underline', exact: true }
         }
     });
