@@ -1,0 +1,18 @@
+id: Output2EditHeader
+name: Output2EditHeader
+version: 1.0.0
+author_link: https://github.com/anonymk
+author_name: anonymk
+description: <__trans phrase="Output the settings to Edit Entry/Page screen header.">
+l10n_class: Output2EditHeader::L10N
+
+editors:
+    tinymce:
+        extension: extension.tmpl
+settings:
+    settings:
+        scope: blog
+tags:
+    function:
+        Output2EditHeaderSettings: $Output2EditHeader::Output2EditHeader::Tags::_hdlr_settings
+blog_config_template: blog_config_template.tmpl
