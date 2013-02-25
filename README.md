@@ -50,6 +50,17 @@ Movable Type 5.2でリッチテキストエディタとして採用されてい�
         theme_advanced_blockformats: 'h1,h2,h3,h4,h5,h6,p,pre'
     });
 
+もしくは
+
+    jQuery.extend(MT.Editor.TinyMCE.config, {
+        plugins: MT.Editor.TinyMCE.config.plugins + ',table',
+        plugin_mt_source_buttons1: 'mt_source_bold,mt_source_italic,mt_source_unordered_list,mt_source_ordered_list,mt_source_list_item,|,mt_source_link,mt_insert_file,mt_insert_image,|,mt_fullscreen',
+        plugin_mt_wysiwyg_buttons1: 'bold,italic,underline,strikethrough,|,blockquote,bullist,numlist,hr,|,link,unlink,|,mt_insert_html,mt_insert_file,mt_insert_image',
+        plugin_mt_wysiwyg_buttons2: 'undo,redo,|,forecolor,backcolor,removeformat,|,justifyleft,justifycenter,justifyright,indent,outdent,|,formatselect,|,mt_fullscreen',
+        plugin_mt_wysiwyg_buttons3: 'table,delete_table,|,row_props,cell_props,|,row_before,row_after,delete_row,|,col_before,col_after,delete_col,|,split_cells,merge_cells',
+        theme_advanced_blockformats: 'h1,h2,h3,h4,h5,h6,p,pre'
+    });
+
 ####スタイル追加
 
     jQuery.extend(MT.Editor.TinyMCE.config, {
