@@ -66,7 +66,7 @@ Movable Type 5.2でリッチテキストエディタとして採用されてい�
     jQuery.extend(MT.Editor.TinyMCE.config, {
         plugin_mt_source_buttons1: 'mt_source_bold,mt_source_italic,mt_source_unordered_list,mt_source_ordered_list,mt_source_list_item,|,mt_source_link,mt_insert_file,mt_insert_image,|,mt_fullscreen',
         plugin_mt_wysiwyg_buttons1: 'bold,italic,underline,strikethrough,|,blockquote,bullist,numlist,hr,|,link,unlink,|,mt_insert_html,mt_insert_file,mt_insert_image',
-        plugin_mt_wysiwyg_buttons2: 'undo,redo,|,forecolor,backcolor,removeformat,|,justifyleft,justifycenter,justifyright,indent,outdent,|,formatselect,|,mt_fullscreen',
+        plugin_mt_wysiwyg_buttons2: 'undo,redo,|,forecolor,backcolor,removeformat,|,justifyleft,justifycenter,justifyright,indent,outdent,|,styleselect,formatselect,|,mt_fullscreen',
         theme_advanced_blockformats: 'h1,h2,h3,h4,h5,h6,p,pre',
         style_formats : [
             { title: '強調', inline: 'strong' },
@@ -84,9 +84,9 @@ Movable Type 5.2でリッチテキストエディタとして採用されてい�
         plugin_mt_wysiwyg_buttons2: 'undo,redo,|,forecolor,backcolor,removeformat,|,justifyleft,justifycenter,justifyright,indent,outdent,|,formatselect,|,mt_fullscreen',
         theme_advanced_blockformats: 'h1,h2,h3,h4,h5,h6,p,pre',
         formats: {
-            alignleft: { selector: 'div,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'left' },
-            aligncenter: { selector: 'div,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'center' },
-            alignright: { selector: 'div,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'right' },
+            alignleft: { selector: 'div,h1,h2,h3,h4,h5,h6,p,table,th,td,ul,ol,li,img', classes: 'left' },
+            aligncenter: { selector: 'div,h1,h2,h3,h4,h5,h6,p,table,th,td,ul,ol,li,img', classes: 'center' },
+            alignright: { selector: 'div,h1,h2,h3,h4,h5,h6,p,table,th,td,ul,ol,li,img', classes: 'right' },
             underline: { inline: 'span', 'classes': 'underline', exact: true }
         }
     });
